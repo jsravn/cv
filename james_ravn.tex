@@ -1,0 +1,81 @@
+% Preamble
+% ---
+\documentclass[11pt,a4paper,roman]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\usepackage[scale=0.79]{geometry}
+
+% Personal data
+% ---
+\name{James}{Ravn}
+\title{Software Developer}
+\phone{+44 07463 500595}
+\email{james@r-vn.org}
+\homepage{www.jsravn.com}
+\social[linkedin]{jsravn}
+\social[github]{jsravn}
+
+% Content
+% ---
+\begin{document}
+\makecvtitle
+
+\section{Technical skills}
+\cvdoubleitem{Languages}{Java, Ruby, C, Bash}{Version control}{Git, Subversion}
+\cvdoubleitem{Databases}{Mongo, Mysql, Oracle}{Editors}{IntelliJ, Emacs, Vim}
+\cvdoubleitem{Infrastructure}{Puppet, Teamcity, Jenkins}{OS}{Linux, OS X, Windows, FreeBSD}
+\cvdoubleitem{Build}{Maven, Ant, Gradle, Autotools, CMake}{Process}{Agile, XP, Scrum, TDD, BDD}
+
+\section{Experience}
+
+\cventry{2014--Current}{Software Developer (Contract)}{Sky}{London, UK}{}{}
+\begin{itemize}
+\item Software developer for greenfield project with high message reliability requirements. Under NDA.\newline
+  \cvitem{Technologies}{Java, Spring, Mule, ActiveMQ, MySQL, Cucumber}
+\item Built testing framework and infrastructure for puppet and rpm changes. This was made part of the project's continuous integration, enabling quick feedback on changes.\newline
+  \cvitem{Technologies}{Puppet, Vagrant, Jenkins, Ruby, RSpec}
+\end{itemize}
+
+\vspace{5mm}
+
+\cventry{2013--2014}{Senior Software Engineer}{Camelot National Lottery}{London, UK}{}{}
+\begin{itemize}
+\item Full stack feature development for next generation lottery platform. Worked primarily on subscriptions with direct debit, serving 1 million accounts. Considered the most complex part of the application.\newline
+  \cvitem{Technologies}{Java, Spring, Hibernate, Gradle, Grails, BACS}
+\item Heavily involved in devops. Advocated for and successfully implemented our branching and code review process. This resulted in >90\% green builds from \textasciitilde10\%, and improved code quality and communication.\newline
+  \cvitem{Technologies}{Gitlab, Jenkins, Puppet}
+\end{itemize}
+
+\vspace{5mm}
+
+\cventry{2009--2013}{Senior Software Engineer}{IMC Financial Markets}{Chicago, IL}{}{}
+\begin{itemize}
+\item Senior developer on automated trading team. Highly ranked by management.
+\item Designed and implemented the core valuation library, used across the company for pricing of securities. Enabled new strategies and enhanced existing ones with significant contribution to PnL.\newline
+  \cvitem{Technologies}{Java, ActiveMQ, Mongo, MySQL}
+\item Replaced the ant-based build system with Maven, leading to an \textasciitilde80\% reduction in build times and significant code reduction. Implemented custom maven plugins.\newline
+  \cvitem{Technologies}{Java, XML}
+\item Performance improvements to the feed component, increasing capacity from 2 million to over 30 million states per minute.\newline
+  \cvitem{Technologies}{Java, VisualVM}
+\item Developed jabber bot and accompanying pidgin plugin (for xmpp-uri) to support broker traders.\newline
+  \cvitem{Technologies}{Java, Smack, C, xmpp}
+\item Mentored junior developers, hosted book clubs (e.g. Hull, GrOOS), and brown bag lunches on various topics (e.g. mockito, fest-asserts).
+\end{itemize}
+
+\vspace{5mm}
+
+\cventry{2006--2009}{Senior Software Engineer}{Motorola}{Libertyville, IL}{}{}
+\begin{itemize}
+\item Consistently ranked in the top 10\% of company employees.
+\item Designed novel software delivery estimation model that became the defacto estimation tool for the organization due to its simplicity and usefulness.\newline
+  \cvitem{Technologies}{Minitab, Excel}
+\item Lead developer of software quality website used by software management, which led to significant improvements in delivery estimation and resource allocation.\newline
+  \cvitem{Technologies}{ASP, Excel, Oracle, MySQL, MSSQL, Javascript}
+\item Implemented defect triage web tool which improved turnaround time for bug fixes.\newline
+  \cvitem{Technologies}{Ruby on Rails, Javascript, HTML, CSS}
+\end{itemize}
+
+\section{Education}
+\cventry{2003--2005}{B.S. Computer Science and Engineering}{University of California}{Los Angeles}{\textit{3.5 GPA}}{}
+
+\end{document}
