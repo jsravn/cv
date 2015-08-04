@@ -22,62 +22,63 @@
 
 \section{Technical skills}
 \cvdoubleitem{Languages}{Java, Ruby, C, Bash}{Version control}{Git, Subversion}
-\cvdoubleitem{Databases}{Mongo, Mysql, Oracle}{Editors}{IntelliJ, Emacs, Vim}
-\cvdoubleitem{Infrastructure}{Puppet, Teamcity, Jenkins}{OS}{Linux, OS X, Windows, FreeBSD}
-\cvdoubleitem{Build}{Maven, Ant, Gradle, Autotools, CMake}{Process}{Agile, XP, Scrum, TDD, BDD}
+\cvdoubleitem{Databases}{Cassandra, Mysql, Mongo}{Editors}{IntelliJ, Emacs, Vim}
+\cvdoubleitem{Infrastructure}{Ansible, Puppet, Jenkins}{OS}{Linux, FreeBSD, OS X, Windows}
+\cvdoubleitem{Build}{Gradle, Maven, Autotools, CMake}{Process}{Agile, XP, Scrum, TDD, BDD, Devops}
 
 \section{Experience}
 
-\cventry{2014--Current}{Software Developer (Contract)}{Sky}{London, UK}{}{}
+\cventry{2014--Current}{Software Developer (Contract with \href{http://www.energizedwork.com}{Energized Work})}{\href{http://www.sky.uk}{Sky}}{London, UK}{}{}
 \begin{itemize}
-\item Senior developer for the internet tv backend, serving Sky Go, Now TV, and wholesale providers. Key contributor to the scaling of our applications on AWS and Cassandra to serve 10,000 TPS. Led improvements to testing strategy for codebase, improving turnaround times.\newline
-  \cvitem{Technologies}{Java, Dropwizard, AWS, Cassandra, Soasta}
-\item Content metadata ingestion with 100\% message reliability requirement. Contributed significant code and architectural improvements, assisting the team to reach its goals.\newline
-  \cvitem{Technologies}{Java, Spring, Mule, ActiveMQ, MySQL, Cucumber}
-\item Built testing framework and infrastructure for puppet and rpm changes. This was made part of the project's continuous integration, enabling quick feedback.\newline
-  \cvitem{Technologies}{Puppet, Vagrant, Jenkins, Ruby, RSpec}
+\item Core contributor to internet tv backend, serving Sky Go, Now TV, and wholesale providers.
+  \begin{itemize}
+  \item Scaling of Dropwizard applications on AWS and Cassandra to serve 10,000 TPS.
+  \item Led improvements to testing strategy for codebase.
+  \item Built non-disruptive deployment in Ansible, including custom modules, for zero downtime deploys to AWS.
+  \end{itemize}
+\vspace{1mm}
+\item Core contributor to content metadata ingestion project with 100\% message reliability requirement.
+  \begin{itemize}
+  \item Wrote dao layer to support XA transactions across Mule and Mysql.
+  \item Solved ActiveMQ bugs with XA transactions that plagued the team for months.
+  \item Built testing framework and infrastructure for continuous integration of Puppet modules.
+  \end{itemize}
 \end{itemize}
 
 \vspace{5mm}
 
-\cventry{2013--2014}{Senior Software Engineer}{Camelot National Lottery}{London, UK}{}{}
+\cventry{2013--2014}{Senior Software Engineer}{\href{https://www.national-lottery.co.uk}{Camelot National Lottery}}{London, UK}{}{}
 \begin{itemize}
-\item Full stack feature development for next generation lottery platform. Worked primarily on subscriptions with direct debit, serving 1 million accounts. Considered the most complex part of the application.\newline
-  \cvitem{Technologies}{Java, Spring, Hibernate, Gradle, Grails, BACS}
-\item Heavily involved in devops. Advocated for and successfully implemented our branching and code review process. This resulted in >90\% green builds from \textasciitilde10\%, and improved code quality and communication.\newline
-  \cvitem{Technologies}{Gitlab, Jenkins, Puppet}
+\item Core contributor to the next generation lottery platform serving all of the UK.
+  \begin{itemize}
+  \item Significant work on subscriptions with direct debit (BACS), serving 1 million accounts. Made it production ready for go-live and oversaw it's rollout.
+  \item Advocated for and successfully implemented our branching and code review process, resulting in >90\% green builds from \textasciitilde10\%, and improved code quality and communication.
+  \end{itemize}
 \end{itemize}
 
 \vspace{5mm}
 
-\cventry{2009--2013}{Senior Software Engineer}{IMC Financial Markets}{Chicago, IL}{}{}
+\cventry{2009--2013}{Senior Software Engineer}{\href{www.imc.nl}{IMC Financial Markets}}{Chicago, IL}{}{}
 \begin{itemize}
-\item Senior developer on automated trading team. Highly ranked by management.
-\item Designed and implemented the core valuation library, used across the company for pricing of securities. Enabled new strategies and enhanced existing ones with significant contribution to PnL.\newline
-  \cvitem{Technologies}{Java, ActiveMQ, Mongo, MySQL, Cucumber}
-\item Replaced the ant-based build system with Maven, leading to an \textasciitilde80\% reduction in build times and significant code reduction. Implemented custom maven plugins.\newline
-  \cvitem{Technologies}{Java, Ant}
-\item Performance improvements to the feed component, increasing capacity from 2 million to over 30 million states per minute.\newline
-  \cvitem{Technologies}{Java, VisualVM, Yourkit, Shark}
-\item Developed jabber bot and accompanying pidgin plugin (for xmpp-uri) to support broker traders.\newline
-  \cvitem{Technologies}{Java, Smack, C, XMPP}
+\item Senior developer on automated trading team. Top ranked by management and peers.
+\item Designed and implemented the core valuation library, used across the company for pricing of securities. Enabled new strategies and enhanced existing ones with significant contribution to PnL. (Java, Mongo, ActiveMQ)
+\item Replaced the company wide ant-based build system with Maven, leading to an \textasciitilde80\% reduction in build times and significant code reduction.
+\item Performance improvements to the feed component, increasing capacity from 2 million to over 30 million states per minute.
+\item Developed jabber bot and accompanying pidgin plugin (for xmpp-uri) to support broker traders over chat.
 \item Mentored junior developers, hosted book clubs (e.g. Hull, GrOOS), and brown bag lunches on various topics (e.g. mockito, fest-asserts).
 \end{itemize}
 
 \vspace{5mm}
 
-\cventry{2006--2009}{Senior Software Engineer}{Motorola}{Libertyville, IL}{}{}
+\cventry{2006--2009}{Senior Software Engineer}{\href{www.motorola.com}{Motorola}}{Libertyville, IL}{}{}
 \begin{itemize}
 \item Consistently ranked in the top 10\% of company employees.
-\item Designed novel software delivery estimation model that became the defacto estimation tool for the software organization due to its simplicity and usefulness.\newline
-  \cvitem{Technologies}{Minitab, Excel}
-\item Lead developer of software quality website used by software management, which led to significant improvements in delivery estimation and resource allocation.\newline
-  \cvitem{Technologies}{ASP, Excel, Oracle, MySQL, MSSQL, Javascript}
-\item Implemented defect triage web tool which improved turnaround time for bug fixes.\newline
-  \cvitem{Technologies}{Ruby on Rails, Javascript, HTML, CSS}
+\item Designed novel software delivery estimation model that became the defacto estimation tool for the software organization due to its simplicity and usefulness. (Excel/VBA)
+\item Lead developer of software quality website used by software management, which led to significant improvements in delivery estimation and resource allocation. (ASP.NET)
+\item Implemented defect triage web tool which improved turnaround time for bug fixes. (Rails)
 \end{itemize}
 
 \section{Education}
-\cventry{2003--2005}{B.S. Computer Science and Engineering}{University of California}{Los Angeles}{\textit{3.5 GPA}}{}
+\cventry{2003--2005}{B.S. Computer Science and Engineering}{\href{http://engineering.ucla.edu}{University of California}}{Los Angeles}{}{}
 
 \end{document}
