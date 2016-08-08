@@ -22,22 +22,27 @@
 \makecvtitle
 
 \section{Technical skills}
-\cvdoubleitem{Languages}{Java, Ruby, C, Bash}{Version control}{Git, Subversion}
+\cvdoubleitem{Languages}{Java, Golang, Ruby, C}{Version control}{Git, Subversion}
 \cvdoubleitem{Databases}{Cassandra, Mysql, Mongo}{Editors}{IntelliJ, Emacs, Vim}
-\cvdoubleitem{Infrastructure}{Ansible, Puppet, Jenkins}{OS}{Linux, FreeBSD, OS X, Windows}
-\cvdoubleitem{Build}{Gradle, Maven, Autotools, CMake}{Process}{Agile, XP, Scrum, TDD, BDD, Devops}
+\cvdoubleitem{Platform}{Kubernetes, Docker, Ansible, Puppet}{OS}{Linux, FreeBSD, OS X}
+\cvdoubleitem{Build}{Gradle, Maven, Autotools, Jenkins}{Process}{Agile, XP, Scrum, TDD, BDD, Devops}
 
 \section{Experience}
 
-\cventry{2014--Current}{Software Developer (Contract with \href{http://www.energizedwork.com}{Energized Work})}{\href{http://www.sky.uk}{Sky}}{London, UK}{}{}
+\cventry{2014--Current}{Software Engineer (Consultant with \href{http://www.energizedwork.com}{Energized Work})}{\href{http://www.sky.uk}{Sky}}{London, UK}{}{}
 \begin{itemize}
-\item Core contributor to internet tv backend, serving Sky Go, Now TV, and wholesale providers.
+\item Co-founder of core engineering team for international commerce platform. On-going work.
   \begin{itemize}
-  \item Scaling of Dropwizard applications on AWS and Cassandra to serve 10,000 TPS.
-  \item Led improvements to testing strategy for codebase.
-  \item Built non-disruptive deployment in Ansible, including custom modules, for zero downtime deploys to AWS.
+  \item Built platform from ground up on AWS and Kubernetes/Docker, with custom built Go, Gradle, and Jenkins components.
+  \item Serves 6 development teams. Significant involvement on the full stack from bare VM to backend applications, including performance testing and team process.
   \end{itemize}
-\item Core contributor to content metadata ingestion project with 100\% message reliability requirement.
+\item Contributed to Internet TV backend, serving Sky Go, Now TV, and wholesale providers.
+  \begin{itemize}
+  \item Scaled Dropwizard applications on AWS and Cassandra to serve 10,000 TPS.
+  \item Led improvements to testing strategy for codebase.
+  \item Built non-disruptive deployment in Ansible, including custom python modules, for zero downtime deploys to AWS.
+  \end{itemize}
+\item Content metadata ingestion project with 100\% message reliability requirement.
   \begin{itemize}
   \item Wrote dao layer to support XA transactions across Mule and Mysql.
   \item Solved ActiveMQ bugs with XA transactions that plagued the team for months.
@@ -51,22 +56,28 @@
 \begin{itemize}
 \item Core contributor to the next generation lottery platform serving all of the UK.
   \begin{itemize}
-  \item Significant work on subscriptions with direct debit (BACS), serving 1 million accounts. Made it production ready for go-live and oversaw it's rollout.
+  \item Significant work on subscriptions with direct debit (BACS), serving 1 million accounts, considered the most complex part of the codebase. Made it production ready for go-live and oversaw it's rollout.
   \item Advocated for and successfully implemented our branching and code review process, resulting in >90\% green builds from \textasciitilde10\%, and improved code quality and communication.
   \end{itemize}
 \end{itemize}
 
 \vspace{5mm}
 
+\clearpage
 \cventry{2009--2013}{Senior Software Engineer}{\href{www.imc.nl}{IMC Financial Markets}}{Chicago, IL}{}{}
 \begin{itemize}
 \item Senior developer on automated trading team. Top ranked by management and peers.
-\item Designed and implemented the core valuation library, used across the company for pricing of securities. Enabled new strategies and enhanced existing ones with significant contribution to PnL. (Java, Mongo, ActiveMQ)
+\item Designed and implemented the core valuation library and parameter server, used across the firm for pricing of securities.
+  \begin{itemize}
+  \item Enabled new strategies and enhanced existing ones with significant contribution to PnL.
+  \item Implemented in core Java with minimal dependencies and high mechanical sympathy, utilizing Java concurrency primitives.
+  \item Novel generic pricing framework built using Java annotated classes and graph analysis to build a pricing DAG. Cucumber specs for building acceptance criteria of specific pricing combinations.
+  \item High performance server component for persisting and propagating parameters of the pricing models, built with Java, ActiveMQ, and Mysql/Mongo.
+  \end{itemize}
 \item Replaced the company wide ant-based build system with Maven, leading to an \textasciitilde80\% reduction in build times and significant code reduction.
-\clearpage
-\item Performance improvements to the feed component, increasing capacity from 2 million to over 30 million states per minute.
+\item Performance improvements to the primary feed component, increasing capacity from 2 million to over 30 million states per minute.
 \item Developed jabber bot and accompanying pidgin plugin (for xmpp-uri) to support broker traders over chat.
-\item Mentored junior developers, hosted book clubs (e.g. Hull, GrOOS), and brown bag lunches on various topics (e.g. mockito, fest-asserts).
+\item Mentored junior developers, hosted book clubs, and brown bag lunches on various topics.
 \end{itemize}
 
 \vspace{5mm}
@@ -74,7 +85,7 @@
 \cventry{2006--2009}{Senior Software Engineer}{\href{www.motorola.com}{Motorola}}{Libertyville, IL}{}{}
 \begin{itemize}
 \item Consistently ranked in the top 10\% of company employees.
-\item Designed novel software delivery estimation model that became the defacto estimation tool for the software organization due to its simplicity and usefulness. (Excel/VBA)
+\item Designed novel software delivery estimation model that became the defacto estimation tool for the mobile software organization due to its simplicity and usefulness. (Excel/VBA)
 \item Lead developer of software quality website used by software management, which led to significant improvements in delivery estimation and resource allocation. (ASP.NET)
 \item Implemented defect triage web tool which improved turnaround time for bug fixes. (Rails)
 \end{itemize}
