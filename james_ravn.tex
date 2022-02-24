@@ -24,10 +24,9 @@
 \section{About}
 \begin{itemize}
   \item Software engineer with 15 years of experience in software development and technical leadership.
-  \item Experienced programmer, having primarily used Go, Java, and C.
-  \item In depth knowledge of infrastructure automation and PaaS, on the cloud and on premises.
-  \item Able to run projects and manage the software lifecycle from start to production.
-  \item Primarily interested in distributed systems, infrastructure automation, and backend development.
+  \item In depth knowledge of infrastructure automation and building platforms in the cloud (AWS/GCP).
+  \item Able to run projects and manage the software life cycle from start to production.
+  \item Primarily interested in distributed systems, infrastructure automation, and systems programming.
 \end{itemize}
 
 \section{Experience}
@@ -37,68 +36,76 @@
   \item As one of the first consultants of CECG, a boutique consulting firm specializing in infrastructure and
         platforms, I have been engaged with Sky/NBCU to provide technical and leadership expertise for the core engineering
         platform.  It supports hundreds of software teams globally and hosts Sky OVP and NBCU Peacock services.
-  \item Design and implementation of the GCP/GKE based core platform. (Pulumi, Go, Typescript)
+  \item Design and implementation of the GCP based core platform. (Pulumi, Go, Typescript, K8s)
 \end{itemize}
 
 \vspace{5mm}
 
-\cventry{2018--2020}{Tech Lead / Principal Engineer}{\href{https://lightbend.com}{Lightbend}}{London, UK}{}{}
+\cventry{2018--2020}{Tech Lead / Principal Software Engineer}{\href{https://lightbend.com}{Lightbend}}{London, UK}{}{}
 \begin{itemize}
   \item Tech lead for Lightbend Console, a monitoring product built for Akka/Play/Lagom. Led
         team of 5 engineers. (Prometheus, K8s, Go, Scala)
-  \item Principal software engineer in the Office of the CTO, working on cloudstate.io, a managed Akka serverless platform.
-        (K8s, Go, Scala, Akka)
+  \item Principal software engineer in the Office of the CTO.\@ Worked on cloudstate.io, a managed Akka serverless platform.
+        (GCP, K8s, Go, Scala, Akka)
 \end{itemize}
 
 \vspace{5mm}
 
-\cventry{2014--Current}{Consultant (Energized Work/Ravn Consulting)}{\href{http://www.sky.uk}{Sky}}{London, UK}{}{}
+\cventry{2014--2018}{Principal Software Engineer}{\href{http://www.sky.uk}{Sky}}{London, UK}{}{}
 \begin{itemize}
-\item Co-creator of core engineering team for online video platform. On-going work.
-  \begin{itemize}
-  \item Built platform from ground up on AWS, Kubernetes, and Cassandra, with custom built Go, Gradle, and Jenkins components. Made several contributions to Kubernetes upstream.
-  \item Enabled rapid delivery to production for 5 application teams, well within deadlines. Significant involvement on the full stack from bare VM to backend applications, including performance testing and team process.
-  \end{itemize}
-\item Contributed to online video backend, serving Sky Go, Now TV, and wholesale providers.
-  \begin{itemize}
-  \item Scaled Dropwizard applications on AWS and Cassandra to serve 10,000 TPS.\@
-  \item Led improvements to testing strategy for codebase.
-  \item Built non-disruptive deployment in Ansible, including custom python modules, for zero downtime deploys to AWS.\@
-  \end{itemize}
-\item Content metadata ingestion project with high message reliability requirement.
-  \begin{itemize}
-  \item Wrote dao layer to support XA transactions across Mule and Mysql.
-  \item Solved ActiveMQ bugs with XA transactions that plagued the team for months.
-  \item Built testing framework and infrastructure for continuous integration of Puppet modules.
-  \end{itemize}
+  \item Co-created the core engineering team for Sky's commerce and online video platforms.
+  \item Advocated for, architected and implemented a common development platform and CI/CD process built on
+        Kubernetes. The platform is built as a PaaS and deployed daily into production. This platform has
+        grown to support the majority of Sky and NBCU online services including Peacock. It hosts hundreds
+        of development teams and consists of clusters with hundreds of nodes, with production peaks routing
+        200k-300k of traffic. (Golang, Terraform, Ansible, AWS, Jenkins, Gradle)
+  \item Kubernetes contributor to support our efforts with several dozen contributions and improvements,
+        particularly in the areas of storage and scalability. Also created and contributed to related
+        open source projects, including feed (ingress controller, has supported peaks of 300K rps in production),
+        fluent-bit, merlin (IPVS manager), etcd-bootstrapper (500k+ downloads), and cqlmigrate
+        (Cassandra schema migrations). (Golang, C)
 \end{itemize}
 
 \vspace{5mm}
 
-\cventry{2013--2014}{Senior Software Engineer}{\href{https://www.national-lottery.co.uk}{Camelot National Lottery}}{London, UK}{}{}
+\cventry{2014--2016}{Software Consultant}{Energized Work}{London, UK}{}{}
 \begin{itemize}
-\item Core contributor to the next generation lottery platform serving all of the UK.\@
-  \begin{itemize}
-  \item Significant work on subscriptions with direct debit (BACS), serving 1 million accounts, considered the most complex part of the codebase. Made it production ready for go-live and oversaw it's rollout.
-  \item Advocated for and successfully implemented our branching and code review process, resulting in >90\% green builds from \textasciitilde10\%, and improved code quality and communication.
-  \end{itemize}
+\item Consultant for EW, a boutique software consultancy specializing in XP, Agile, and software delivery.
 \end{itemize}
 
 \vspace{5mm}
 
-\clearpage
+\cventry{2013--2014}{Senior Software Engineer}{Camelot}{London, UK}{}{}
+\begin{itemize}
+  \item Worked on the next generation lottery platform for the UK.\@ I made significant contributions
+        to the subscriptions component, considered the most complex part of the code base. It serves
+        over 1 million users with direct debit using BACS.\@ (Java, Spring, Gradle, Grails)
+  \item Heavily involved in devops, I advocated and implemented the branching and code review process,
+        rescuing a very broken build process to get >90\% green builds from a 10\% rate when I joined.
+        (Puppet, gitlab, Jenkins)
+\end{itemize}
+
+\vspace{5mm}
+
 \cventry{2009--2013}{Senior Software Engineer}{\href{www.imc.nl}{IMC Financial Markets}}{Chicago, IL}{}{}
 \begin{itemize}
-\item Senior developer on automated trading team. Top ranked by management and peers.
-\item Designed and implemented the core valuation library and parameter server, used across the firm for pricing of derivatives.
+\item Senior engineer on automated trading team. Top ranked by management and peers.
+\item Designed and implemented the core valuation library and parameter server, leveraged across the firm for pricing of derivatives.
   \begin{itemize}
-  \item Enabled new strategies and enhanced existing ones with significant contribution to PnL.
-  \item Implemented in core Java with minimal dependencies and high concurrency, utilizing Java concurrency primitives.
-  \item Novel generic pricing framework built using Java annotated classes and graph analysis to build a pricing DAG.\@ Cucumber specs for building acceptance criteria of specific pricing combinations.
-  \item High performance server component for persisting and propagating parameters of the pricing models, built with Java, ActiveMQ, and Mysql/Mongo.
+    \item Enabled new strategies and enhanced existing ones with significant contribution to PnL. It
+          consolidated many separate, fragmented components used by different trading desks.
+    \item Implemented in core Java with minimal dependencies and high concurrency, utilizing Java
+          concurrency primitives.
+    \item Novel design built using Java annotated classes and graph analysis to build a pricing DAG.\@
+          Cucumber specs for building acceptance criteria of specific pricing combinations.
+    \item High performance server component for persisting and propagating parameters of the pricing models.
+          (Java, ActiveMQ, Mysql/Mongo)
   \end{itemize}
-\item Replaced the company wide ant-based build system with Maven, leading to an \textasciitilde80\% reduction in build times and significant code reduction.
-\item Performance improvements to the primary feed component, increasing capacity from 2 million to over 30 million states per minute.
+  \item Replaced the company wide ant-based build system with Maven, leading to an 80\%
+        reduction in build times and significant code reduction. This had a large impact on developer
+        productivity.
+  \item Performance improvements to the primary feed component, increasing capacity from 2 million to \textgreater{} 30
+        million states per minute.
 \item Developed jabber bot and accompanying pidgin plugin in C to support broker traders over chat.
 \item Mentored junior developers, hosted book clubs, and brown bag lunches on various topics.
 \end{itemize}
@@ -108,9 +115,11 @@
 \cventry{2006--2009}{Senior Software Engineer}{\href{www.motorola.com}{Motorola}}{Libertyville, IL}{}{}
 \begin{itemize}
 \item Consistently ranked in the top 10\% of company employees.
-\item Designed novel software delivery estimation model that became the defacto estimation tool for the mobile software organization due to its simplicity and usefulness. (Excel/VBA)
-\item Lead developer of software quality website used by software management, which led to significant improvements in delivery estimation and resource allocation. (ASP.NET)
-\item Implemented defect triage web tool which improved turnaround time for bug fixes. (Rails)
+  \item Designed novel software delivery estimation model that became the de facto estimation tool for the mobile
+        software organization due to its simplicity and usefulness. (Excel/VBA)
+  \item Lead developer of software quality website used by software management, which led to significant improvements
+        in delivery estimation and resource allocation. (ASP.NET)
+  \item Implemented defect triage web tool which improved turnaround time for bug fixes. (Rails)
 \end{itemize}
 
 \section{Education}
