@@ -58,12 +58,11 @@
         Kubernetes. The platform is built as a PaaS and deployed daily into production. This platform has
         grown to support the majority of Sky and NBCU online services including Peacock. It hosts hundreds
         of development teams and consists of clusters with hundreds of nodes, with production peaks routing
-        200k-300k of traffic. (Golang, Terraform, Ansible, AWS, Jenkins, Gradle)
+        200k-300k requests per second. (Golang, Terraform, Ansible, AWS, Jenkins, Gradle)
   \item Kubernetes contributor to support our efforts with several dozen contributions and improvements,
         particularly in the areas of storage and scalability. Also created and contributed to related
-        open source projects, including feed (ingress controller, has supported peaks of 300K rps in production),
-        fluent-bit, merlin (IPVS manager), etcd-bootstrapper (500k+ downloads), and cqlmigrate
-        (Cassandra schema migrations). (Golang, C)
+        open source projects, including feed (ingress controller), fluent-bit, merlin (IPVS manager),
+        etcd-bootstrapper (500k+ downloads), and cqlmigrate (Cassandra schema migrations). (Golang, C)
 \end{itemize}
 
 \vspace{5mm}
@@ -99,13 +98,13 @@
     \item Novel design built using Java annotated classes and graph analysis to build a pricing DAG.\@
           Cucumber specs for building acceptance criteria of specific pricing combinations.
     \item High performance server component for persisting and propagating parameters of the pricing models.
-          (Java, ActiveMQ, Mysql/Mongo)
+          Created custom Mongo Java driver to enable high throughput. (Java, ActiveMQ, Mysql/Mongo)
   \end{itemize}
   \item Replaced the company wide ant-based build system with Maven, leading to an 80\%
         reduction in build times and significant code reduction. This had a large impact on developer
         productivity.
-  \item Performance improvements to the primary feed component, increasing capacity from 2 million to \textgreater{} 30
-        million states per minute.
+  \item Performance improvements to the primary feed component which groups orders and has significant
+        state, increasing capacity from 2 million to \textgreater{} 30 million orders per minute.
 \item Developed jabber bot and accompanying pidgin plugin in C to support broker traders over chat.
 \item Mentored junior developers, hosted book clubs, and brown bag lunches on various topics.
 \end{itemize}
@@ -116,9 +115,11 @@
 \begin{itemize}
 \item Consistently ranked in the top 10\% of company employees.
   \item Designed novel software delivery estimation model that became the de facto estimation tool for the mobile
-        software organization due to its simplicity and usefulness. (Excel/VBA)
-  \item Lead developer of software quality website used by software management, which led to significant improvements
-        in delivery estimation and resource allocation. (ASP.NET)
+        software organization due to its simplicity and usefulness, utilizing a combination of linear regression and
+        Markov chains on historical data. (Excel/VBA)
+  \item Lead developer of software quality website used by software management, which provided multiple data aggregation
+        and analysis models from various disparate sources. This led to significant improvements in delivery estimation
+        and resource allocation. (ASP.NET)
   \item Implemented defect triage web tool which improved turnaround time for bug fixes. (Rails)
 \end{itemize}
 
